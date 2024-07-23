@@ -1,23 +1,14 @@
-import logo from './logo.svg';
 import './App.css';
+import Dooh from './components/devices/dooh/Dooh';
+import Iphone from './components/devices/iphone/Iphone';
+import Laptop from './components/devices/laptop/Laptop';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Iphone />
+      <Laptop />
+      <Dooh />
     </div>
   );
 }

@@ -1,0 +1,76 @@
+.outerFrame {
+    width: 18rem;
+    aspect-ratio: 8/16;
+    border-radius: 3rem;
+    padding: .5rem;
+    background-color: black;
+    position: relative;
+}
+
+.innerFrame {
+    height: 100%;
+    border-radius: calc(3rem - .5rem);
+    position: relative;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.notch {
+    position: absolute;
+    top: .6rem;
+    left: 50%;
+    transform: translate(-50%);
+    width: 30%;
+    height: 1.2rem;
+    background-color: black;
+    border-radius: 1rem;
+}
+
+.volumeButtons {
+    position: absolute;
+    top: 20%;
+    left: -.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.volumeUp,
+.volumeDown {
+    height: 3rem;
+    width: .2rem;
+    background-color: black;
+}
+
+.holdButton {
+    position: absolute;
+    top: 25%;
+    right: -.2rem;
+    height: 4rem;
+    width: .2rem;
+    background-color: black;
+}
+
+.content {
+    margin: 0 20px;
+    font-family: sans-serif;
+    max-width: 15rem;
+
+
+    & h3 {
+        text-transform: uppercase;
+    }
+
+    &>* {
+        text-align: center;
+    }
+}
+
+.svg {
+    position: absolute;
+    bottom: -30%;
+    left: -50%;
+}
